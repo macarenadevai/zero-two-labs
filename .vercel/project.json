@@ -1,16 +1,1 @@
-{
-  "projectId": "prj_ngWXAVXSjXYmCO0xWT1cPogXsUzF",
-  "orgId": "team_TIJGG1GNpbRbq98X7EKMC6ZK",
-  "projectName": "zero-two-labs",
-  "settings": {
-    "createdAt": 1778648343224,
-    "framework": "nextjs",
-    "devCommand": null,
-    "installCommand": null,
-    "buildCommand": null,
-    "outputDirectory": null,
-    "rootDirectory": null,
-    "directoryListing": false,
-    "nodeVersion": "24.x"
-  }
-}
+{"projectId":"prj_ngWXAVXSjXYmCO0xWT1cPogXsUzF","orgId":"team_TIJGG1GNpbRbq98X7EKMC6ZK","projectName":"zero-two-labs"}

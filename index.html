@@ -212,6 +212,7 @@
     }
     .badge-dev { color: #ff9900; border-color: rgba(255,153,0,0.3); background: rgba(255,153,0,0.08); }
     .badge-inc { color: #00bfff; border-color: rgba(0,191,255,0.3); background: rgba(0,191,255,0.08); }
+    .badge-hack { color: #ffd700; border-color: rgba(255,215,0,0.3); background: rgba(255,215,0,0.08); }
     .badge-stable { color: var(--accent); border-color: rgba(20,184,166,0.3); background: rgba(20,184,166,0.08); }
     .product-desc {
       font-size: 13px;
@@ -422,26 +423,8 @@
     <div class="product-list">
       <div class="product-card">
         <div class="product-header">
-          <span class="product-icon">⚡</span>
-          <h3 class="product-name">PayKit</h3>
-          <span class="product-badge badge-dev">DEVELOPMENT</span>
-        </div>
-        <p class="product-desc">
-          Infraestructura de pagos on-chain con liquidación en Solana. Pagos QR, transfers P2P,
-          integración con wallets. Diseñado para el ecosistema LATAM donde la banca tradicional no llega.
-        </p>
-        <div class="product-stack">
-          <span>Solana</span><span>Anchor</span><span>Next.js</span><span>React</span>
-        </div>
-        <div class="product-links">
-          <a href="https://github.com/usainbluntmx/paykit" target="_blank" rel="noreferrer">github →</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
           <span class="product-icon">🌍</span>
-          <h3 class="product-name">Atlas</h3>
+          <h3 class="product-name">Atlas World Protocol</h3>
           <span class="product-badge badge-inc">INCUBATION</span>
         </div>
         <p class="product-desc">
@@ -453,89 +436,53 @@
         </div>
         <div class="product-links">
           <a href="https://github.com/usainbluntmx/atlas" target="_blank" rel="noreferrer">github →</a>
-          <a href="https://atlas-fawn-delta.vercel.app" target="_blank" rel="noreferrer">demo →</a>
+          <a href="https://atlas-tau-opal.vercel.app" target="_blank" rel="noreferrer">demo →</a>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-header">
-          <span class="product-icon">💰</span>
-          <h3 class="product-name">Agent Wallet</h3>
-          <span class="product-badge badge-stable">STABLE</span>
+          <span class="product-icon">🔗</span>
+          <h3 class="product-name">Nodemesh</h3>
+          <span class="product-badge badge-hack">🥉 3ER LUGAR — MONAD BLITZ</span>
         </div>
         <p class="product-desc">
-          Wallet multi-chain para AI agents. Solana SPL, EVM ERC-4337, Polymarket, swaps Jupiter
-          y estrategias automatizadas de trading. Código abierto.
+          Infraestructura de nodos descentralizada P2P con micropagos streaming en Monad.
+          Ganador del <strong>3er lugar</strong> en la 2da edición del Monad Blitz Hackathon CDMX.
         </p>
         <div class="product-stack">
-          <span>Python</span><span>Solana</span><span>EVM</span><span>Polymarket</span>
+          <span>Monad</span><span>Solidity</span><span>Rust</span><span>P2P</span>
         </div>
         <div class="product-links">
-          <a href="https://github.com/macarenadevai/agent-wallet" target="_blank" rel="noreferrer">github →</a>
+          <a href="https://github.com/usainbluntmx/nodemesh" target="_blank" rel="noreferrer">github →</a>
         </div>
       </div>
     </div>
 
     <div class="glow-line"></div>
 
-    <!-- Timeline -->
-    <div class="section-label">// TRAYECTORIA</div>
+    <!-- Team Section -->
+    <div class="section-label">// TEAM</div>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-dot"></span>
-        <p class="timeline-date">2022</p>
-        <h4 class="timeline-title">Fundación</h4>
-        <p class="timeline-desc">Zero Two Labs nace como estudio de desarrollo blockchain en México. Enfoque inicial en smart contracts Solana.</p>
-        <span class="timeline-line"></span>
-      </div>
-
-      <div class="timeline-item">
-        <span class="timeline-dot"></span>
-        <p class="timeline-date">2024</p>
-        <h4 class="timeline-title">PayKit MVP</h4>
-        <p class="timeline-desc">Primera versión del sistema de pagos recurrentes USDC en Solana. Tests cerrados con usuarios selectos.</p>
-        <span class="timeline-line"></span>
-      </div>
-
-      <div class="timeline-item">
-        <span class="timeline-dot"></span>
-        <p class="timeline-date">2025</p>
-        <h4 class="timeline-title">Expansión Multi-chain</h4>
-        <p class="timeline-desc">EVM (Arbitrum, Base, Monad) se integra al stack. Atlas y Agent Wallet alcanzan hitos públicos.</p>
-        <span class="timeline-line"></span>
-      </div>
-
-      <div class="timeline-item">
-        <span class="timeline-dot active"></span>
-        <p class="timeline-date">2026</p>
-        <h4 class="timeline-title">→ Hoy</h4>
-        <p class="timeline-desc">Infraestructura blockchain para LATAM. Productos en mainnet, código abierto, construyendo el siguiente ciclo.</p>
-      </div>
-    </div>
-
-    <div class="glow-line"></div>
-
-    <!-- Changelog -->
-    <div class="section-label">// CHANGELOG</div>
-
-    <div class="timeline">
-      <div class="timeline-item" style="padding-bottom: 24px;">
-        <span class="timeline-dot" style="width: 10px; height: 10px;"></span>
-        <p class="timeline-date">2026-05-24</p>
-        <p class="timeline-desc">Sitio web v3.5 — rediseño completo. Nueva propuesta minimalista single-page.</p>
-        <span class="timeline-line" style="background: linear-gradient(to bottom, rgba(255,255,255,0.08), transparent);"></span>
-      </div>
-      <div class="timeline-item" style="padding-bottom: 24px;">
-        <span class="timeline-dot" style="width: 10px; height: 10px;"></span>
-        <p class="timeline-date">2026-05-21</p>
-        <p class="timeline-desc">Agent Wallet v6.5 — soporte Polymarket, agent-gate v2, swap Jupiter.</p>
-        <span class="timeline-line" style="background: linear-gradient(to bottom, rgba(255,255,255,0.08), transparent);"></span>
-      </div>
-      <div class="timeline-item" style="padding-bottom: 24px;">
-        <span class="timeline-dot" style="width: 10px; height: 10px;"></span>
-        <p class="timeline-date">2026-04-15</p>
-        <p class="timeline-desc">PayKit MVP deploy en testnet Solana. Pagos recurrentes USDC.</p>
+    <div class="product-list">
+      <div class="product-card">
+        <div class="product-header">
+          <span class="product-icon">👤</span>
+          <h3 class="product-name">Richi</h3>
+          <span class="product-badge badge-stable">FOUNDER</span>
+        </div>
+        <p class="product-desc">
+          Solana Certified Developer. Sistemas Computacionales. Blockchain desde 2021.
+          Full Stack en Solana (Anchor/Rust) y EVM (Solidity/Foundry). Creador de PayKit,
+          Atlas, Nodemesh y Agent Wallet.
+        </p>
+        <div class="product-stack">
+          <span>Solana</span><span>EVM</span><span>Rust</span><span>Next.js</span>
+        </div>
+        <div class="product-links">
+          <a href="https://github.com/usainbluntmx" target="_blank" rel="noreferrer">github →</a>
+          <a href="https://x.com/usainbluntmx" target="_blank" rel="noreferrer">x →</a>
+        </div>
       </div>
     </div>
 
@@ -544,16 +491,11 @@
     <!-- Contact -->
     <div class="section-label">// CONTACTO</div>
 
-    <div class="social-grid">
-      <a href="mailto:hola@zerotwolabs.com" class="social-link">
+    <div class="social-grid" style="grid-template-columns: 1fr;">
+      <a href="mailto:ricardo@zerotwolabs.xyz" style="justify-content:center;" class="social-link">
         <span>✉</span>
         <span>Email</span>
-        <span class="handle">hola@zerotwolabs.com</span>
-      </a>
-      <a href="https://github.com/ZeroTwoLabs" target="_blank" rel="noreferrer" class="social-link">
-        <span>⌘</span>
-        <span>GitHub</span>
-        <span class="handle">/ZeroTwoLabs</span>
+        <span class="handle" style="margin-left:8px;">ricardo@zerotwolabs.xyz</span>
       </a>
     </div>
 
