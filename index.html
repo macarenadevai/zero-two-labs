@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,9 @@
   <meta property="og:title" content="Zero Two Labs — Infraestructura Blockchain" />
   <meta property="og:description" content="Infraestructura y soluciones blockchain para LATAM. EVM + SVM." />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="alternate" hreflang="es" href="https://zero-two-labs.vercel.app/" />
+  <link rel="alternate" hreflang="en" href="https://zero-two-labs.vercel.app/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://zero-two-labs.vercel.app/" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230A0A0A'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-family='Arial' font-size='36' font-weight='bold' fill='%2300FFAA'%3EZ%3C/text%3E%3C/svg%3E" />
   <style>
     :root {
@@ -391,6 +394,30 @@
       margin-left: 0;
     }
 
+    /* Language Switcher */
+    .lang-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 20px 24px 16px;
+      max-width: 640px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+      font-family: var(--font-mono);
+    }
+    .lang-nav a {
+      color: var(--text-muted);
+      padding: 2px 4px;
+      border-radius: 2px;
+    }
+    .lang-nav a:hover { color: var(--accent); }
+    .lang-nav a.active {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .lang-divider { color: var(--text-muted); }
+
     /* Mobile */
     @media (max-width: 640px) {
       .page { padding: 24px 16px; }
@@ -403,6 +430,13 @@
 </head>
 <body>
 
+  <!-- Language Switcher -->
+  <nav class="lang-nav" aria-label="Idioma">
+    <a href="#" class="active" data-lang-switch="es" lang="es" hreflang="es">🇲🇽 ES</a>
+    <span class="lang-divider">/</span>
+    <a href="#" data-lang-switch="en" lang="en" hreflang="en">🇺🇸 EN</a>
+  </nav>
+
   <main class="page">
 
     <!-- Command header -->
@@ -413,11 +447,11 @@
     </div>
 
     <!-- Hero -->
-    <h1 class="hero-title">
+    <h1 class="hero-title" data-i18n="hero_title">
       Creando Infraestructura y <span class="accent">Soluciones Onchain</span>
     </h1>
 
-    <p class="hero-desc">
+    <p class="hero-desc" data-i18n="hero_desc">
       En Zero Two Labs diseñamos y construimos soluciones e infraestructura blockchain.
       Desarrollamos implementaciones onchain open source para los ecosistemas EVM y SVM
       que resuelven problemas reales.
@@ -427,24 +461,24 @@
     <div class="stats">
       <div class="stat-item">
         <p class="stat-value">EVM + SVM</p>
-        <p class="stat-label">Ecosistemas Soportados</p>
+        <p class="stat-label" data-i18n="stat1_label">Ecosistemas Soportados</p>
       </div>
       <div class="stat-item">
         <p class="stat-value">Solidity + Rust</p>
-        <p class="stat-label">Stack Principal</p>
+        <p class="stat-label" data-i18n="stat2_label">Stack Principal</p>
       </div>
       <div class="stat-item">
         <p class="stat-value">2026</p>
-        <p class="stat-label">Fundado en México</p>
+        <p class="stat-label" data-i18n="stat3_label">Fundado en México</p>
       </div>
     </div>
 
-    <a href="#productos" class="btn">↓ Conocer Productos</a>
+    <a href="#productos" class="btn" data-i18n="cta">↓ Conocer Productos</a>
 
     <div class="glow-line"></div>
 
     <!-- Products Section -->
-    <div class="section-label" id="productos">// PRODUCTOS</div>
+    <div class="section-label" id="productos" data-i18n="products_label">// PRODUCTOS</div>
 
     <div class="product-list">
       <div class="product-card">
@@ -453,7 +487,7 @@
           <h3 class="product-name">Atlas World Protocol</h3>
           <span class="product-badge badge-inc">INCUBATION PROJECT</span>
         </div>
-        <p class="product-desc">
+        <p class="product-desc" data-i18n="atlas_desc">
           Framework para mundos persistentes on-chain en Solana. Personajes NFT, recursos
           recolectables y leaderboard. Cada acción del jugador queda registrada permanentemente.
         </p>
@@ -472,7 +506,7 @@
           <h3 class="product-name">Nodemesh</h3>
           <span class="product-badge badge-hack">WINNING HACKATHON PROJECT</span>
         </div>
-        <p class="product-desc">
+        <p class="product-desc" data-i18n="nodemesh_desc">
           Infraestructura de nodos descentralizada P2P con micropagos streaming en Monad.
           Ganador del <strong>3er lugar</strong> en la 2da edición del Monad Blitz Hackathon CDMX.
         </p>
@@ -490,7 +524,7 @@
           <h3 class="product-name">Pay 'n Go</h3>
           <span class="product-badge badge-hack">WINNING HACKATHON PROJECT</span>
         </div>
-        <p class="product-desc">
+        <p class="product-desc" data-i18n="payngo_desc">
           Aplicación de pagos en stablecoins con identidad por @handle y agente de IA conversacional.
           Ganador del <strong>2do lugar</strong> en el Track General del Ethereum Mexico 2026 Hackathon.
         </p>
@@ -506,14 +540,14 @@
     <div class="glow-line"></div>
 
     <!-- Team Section -->
-    <div class="section-label">// TEAM</div>
+    <div class="section-label" data-i18n="team_label">// TEAM</div>
 
     <div class="product-list">
       <div class="product-card team-card">
         <img src="richi-profile.png" alt="Richi XBT" class="team-avatar" />
         <h3 class="product-name">Richi XBT</h3>
         <span class="product-badge badge-stable">FOUNDER & CTO</span>
-        <p class="product-desc">
+        <p class="product-desc" data-i18n="richi_desc">
           Ingeniero en Sistemas Computacionales & Full Stack Developer
         </p>
         <div class="product-links">
@@ -526,21 +560,21 @@
     <div class="glow-line"></div>
 
     <!-- Contact -->
-    <div class="section-label">// CONTACTO</div>
+    <div class="section-label" data-i18n="contact_label">// CONTACTO</div>
 
     <div class="social-grid" style="grid-template-columns: 1fr;">
       <a href="mailto:ricardo@zerotwolabs.xyz" style="justify-content:center;" class="social-link">
         <span>✉</span>
-        <span>Email</span>
+        <span data-i18n="email_label">Email</span>
         <span class="handle" style="margin-left:8px;">ricardo@zerotwolabs.xyz</span>
       </a>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-      <p>propiedad de ___&lt;zero_two_labs&gt;___</p>
+      <p data-i18n="footer_text">propiedad de ___&lt;zero_two_labs&gt;___</p>
       <p>
-        <span class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <span class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-i18n="scroll_top">
           ↑ volver al inicio
         </span>
       </p>
@@ -548,5 +582,78 @@
 
   </main>
 
+  <script>
+    const i18n = {
+      es: {
+        hero_title: 'Creando Infraestructura y <span class="accent">Soluciones Onchain</span>',
+        hero_desc: 'En Zero Two Labs diseñamos y construimos soluciones e infraestructura blockchain. Desarrollamos implementaciones onchain open source para los ecosistemas EVM y SVM que resuelven problemas reales.',
+        stat1_label: 'Ecosistemas Soportados',
+        stat2_label: 'Stack Principal',
+        stat3_label: 'Fundado en México',
+        cta: '↓ Conocer Productos',
+        products_label: '// PRODUCTOS',
+        atlas_desc: 'Framework para mundos persistentes on-chain en Solana. Personajes NFT, recursos recolectables y leaderboard. Cada acción del jugador queda registrada permanentemente.',
+        nodemesh_desc: 'Infraestructura de nodos descentralizada P2P con micropagos streaming en Monad. Ganador del <strong>3er lugar</strong> en la 2da edición del Monad Blitz Hackathon CDMX.',
+        payngo_desc: 'Aplicación de pagos en stablecoins con identidad por @handle y agente de IA conversacional. Ganador del <strong>2do lugar</strong> en el Track General del Ethereum Mexico 2026 Hackathon.',
+        team_label: '// TEAM',
+        richi_desc: 'Ingeniero en Sistemas Computacionales & Full Stack Developer',
+        contact_label: '// CONTACTO',
+        email_label: 'Email',
+        footer_text: 'propiedad de ___&lt;zero_two_labs&gt;___',
+        scroll_top: '↑ volver al inicio'
+      },
+      en: {
+        hero_title: 'Building Infrastructure & <span class="accent">Onchain Solutions</span>',
+        hero_desc: 'At Zero Two Labs we design and build blockchain solutions and infrastructure. We develop open source onchain implementations for the EVM and SVM ecosystems that solve real problems.',
+        stat1_label: 'Supported Ecosystems',
+        stat2_label: 'Main Stack',
+        stat3_label: 'Founded in Mexico',
+        cta: '↓ View Products',
+        products_label: '// PRODUCTS',
+        atlas_desc: 'Framework for persistent on-chain worlds on Solana. NFT characters, collectible resources and leaderboards. Every player action is permanently recorded.',
+        nodemesh_desc: 'Decentralized P2P node infrastructure with streaming micropayments on Monad. Winner of <strong>3rd place</strong> at the 2nd edition of Monad Blitz Hackathon CDMX.',
+        payngo_desc: 'Stablecoin payment app with @handle identity and conversational AI agent. Winner of <strong>2nd place</strong> in the General Track at Ethereum Mexico 2026 Hackathon.',
+        team_label: '// TEAM',
+        richi_desc: 'Computer Systems Engineer & Full Stack Developer',
+        contact_label: '// CONTACT',
+        email_label: 'Email',
+        footer_text: 'property of ___&lt;zero_two_labs&gt;___',
+        scroll_top: '↑ back to top'
+      }
+    };
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-lang-switch]').forEach(el => {
+        el.classList.toggle('active', el.dataset.langSwitch === lang);
+      });
+      const t = i18n[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (t[key]) el.innerHTML = t[key];
+      });
+    }
+
+    document.querySelectorAll('[data-lang-switch]').forEach(el => {
+      el.addEventListener('click', e => {
+        e.preventDefault();
+        setLang(el.dataset.langSwitch);
+      });
+    });
+
+    // SVGs for social icons
+    const icons = {
+      github: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>',
+      x: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46L20 4"/></svg>',
+    };
+
+    document.querySelectorAll('.social-link').forEach(el => {
+      const href = el.getAttribute('href');
+      const iconEl = el.querySelector('.icon');
+      if (!iconEl) return;
+      if (href.includes('github.com')) iconEl.innerHTML = icons.github;
+      else if (href.includes('x.com') || href.includes('twitter.com')) iconEl.innerHTML = icons.x;
+    });
+  </script>
 </body>
 </html>
