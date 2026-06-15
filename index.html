@@ -365,6 +365,28 @@
     }
     .scroll-top:hover { color: var(--accent); }
 
+    /* Team */
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .team-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+      border: 2px solid var(--accent);
+    }
+    .team-card .product-name {
+      text-align: center;
+    }
+    .team-card .product-links {
+      justify-content: center;
+    }
+
     /* Mobile */
     @media (max-width: 640px) {
       .page { padding: 24px 16px; }
@@ -483,20 +505,13 @@
     <div class="section-label">// TEAM</div>
 
     <div class="product-list">
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-icon">👤</span>
-          <h3 class="product-name">Richi</h3>
-          <span class="product-badge badge-stable">FOUNDER</span>
-        </div>
+      <div class="product-card team-card">
+        <img src="richi-profile.png" alt="Richi XBT" class="team-avatar" />
+        <h3 class="product-name">Richi XBT</h3>
+        <span class="product-badge badge-stable">FOUNDER & CTO</span>
         <p class="product-desc">
-          Solana Certified Developer. Sistemas Computacionales. Blockchain desde 2021.
-          Full Stack en Solana (Anchor/Rust) y EVM (Solidity/Foundry). Creador de PayKit,
-          Atlas, Nodemesh y Agent Wallet.
+          Ingeniero en Sistemas Computacionales & Full Stack Developer
         </p>
-        <div class="product-stack">
-          <span>Solana</span><span>EVM</span><span>Rust</span><span>Next.js</span>
-        </div>
         <div class="product-links">
           <a href="https://github.com/usainbluntmx" target="_blank" rel="noreferrer">github →</a>
           <a href="https://x.com/usainbluntmx" target="_blank" rel="noreferrer">x →</a>
